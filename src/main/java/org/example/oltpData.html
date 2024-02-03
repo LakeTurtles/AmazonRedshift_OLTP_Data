@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+          font-family: 'Arial', sans-serif;
+          margin: 0;
+          padding: 0;
+          background-color: #f4f4f4;
+        }
+
+        header {
+          background-color: #333;
+          color: #fff;
+          padding: 20px;
+          text-align: center;
+        }
+
+        h1 {
+          margin: 0;
+        }
+
+        p {
+          margin: 5px 0;
+        }
+
+        .card {
+          background-color: #fff;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+          margin: 20px;
+          padding: 15px;
+        }
+
+        h2 {
+          color: #333;
+        }
+    </style>
+    <title>OLTP Workloads in Databases</title>
+</head>
+
+<body>
+
+<header>
+    <h1>OLTP Workloads in Databases</h1>
+    <p>Understanding Online Transaction Processing (OLTP)</p>
+</header>
+
+<div class="card">
+    <h2>Characteristics of OLTP Workloads</h2>
+    <ul>
+        <li><strong>Transactional Nature:</strong> OLTP systems handle a large number of small transactions in real-time. Examples include processing online orders, updating customer information, and managing inventory.</li>
+        <li><strong>Concurrency:</strong> Designed to handle multiple concurrent transactions simultaneously, ensuring that different users can interact with the system concurrently without conflicts.</li>
+        <li><strong>Normalization:</strong> Utilizes a normalized data model to minimize redundancy and ensure data consistency. This involves breaking down data into smaller, related tables to avoid duplication.</li>
+        <li><strong>ACID Properties:</strong> Adheres to Atomicity, Consistency, Isolation, and Durability for reliable transactions. Transactions are treated as atomic units, ensuring data integrity.</li>
+        <li><strong>Indexing:</strong> Uses indexes to quickly locate and retrieve specific records, enhancing the speed of data retrieval for transactional operations.</li>
+        <li><strong>Low Latency:</strong> Prioritizes low response times for real-time operations, meeting user expectations for quick transaction processing.</li>
+    </ul>
+</div>
+
+<div class="card">
+    <h2>Examples of OLTP Applications</h2>
+    <ul>
+        <li><strong>Online Banking Systems:</strong> Handling financial transactions in real-time, such as fund transfers, balance inquiries, and bill payments.</li>
+        <li><strong>Point of Sale (POS) Systems:</strong> Processing sales transactions in retail environments, including updating inventory and generating receipts.</li>
+        <li><strong>Order Processing Systems:</strong> Managing and updating inventory, processing customer orders, and handling order fulfillment in e-commerce platforms.</li>
+        <li><strong>Booking and Reservation Systems:</strong> Managing reservations for flights, hotels, and services, ensuring real-time availability and updates.</li>
+        <li><strong>Customer Relationship Management (CRM) Systems:</strong> Recording and updating customer information, managing interactions, and facilitating real-time communication with customers.</li>
+        <li><strong>Healthcare Information Systems:</strong> Recording patient data, scheduling appointments, and managing medical records in real-time.</li>
+    </ul>
+</div>
+
+</body>
+
+</html>
